@@ -1,6 +1,7 @@
 #!/bin/bash
-docker run --rm -it \
+LIBGL_ALWAYS_INDIRECT=1
+
+docker run --name scilab --rm --net=host \
        --env="DISPLAY" \
        -v "${HOME}/.Xauthority:/home/scilab/.Xauthority:rw" \
-       --entrypoint /bin/bash \
        andzuc/debian-scilab
