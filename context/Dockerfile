@@ -8,5 +8,5 @@ RUN useradd -m scilab
 USER scilab
 ENV HOME /home/scilab
 WORKDIR /home/scilab
-RUN chmod a+w .
+VOLUME /home/scilab
 ENTRYPOINT ["/usr/bin/scilab"]
