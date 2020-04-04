@@ -2,6 +2,7 @@ FROM andzuc/debian-base
 LABEL maintainer "Andrea Zuccherelli <andrea@zuccherelli.net>"
 RUN apt-get install -y \
     scilab \
+    scilab-doc \
     curl \
     --no-install-recommends
 RUN useradd -m scilab
