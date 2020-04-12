@@ -4,6 +4,7 @@ RUN apt-get install -y \
     scilab \
     scilab-doc \
     curl \
+    build-essential \
     --no-install-recommends
 RUN useradd -m scilab
 USER scilab
