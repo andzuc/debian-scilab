@@ -12,9 +12,10 @@ ARG SCILAB_TAR="scilab-${SCILAB_VER}.bin.linux-x86_64.tar.gz"
 ADD "http://www.scilab.org/download/${SCILAB_VER}/${SCILAB_TAR}" /tmp/
 RUN tar -C /opt -xvzf "/tmp/${SCILAB_TAR}"
 
-RUN useradd -m scilab
+RUN ln -s "scilab-${SCILAB_VER}" /opt/scilab \
+    && useradd -m scilab
 USER scilab
 ENV HOME /home/scilab
 WORKDIR /home/scilab
 VOLUME /home/scilab
-ENTRYPOINT ["/opt/scilab-${SCILAB_VER}/bin/scilab"]
+ENTRYPOINT ["/opt/scilab/bin/scilab"]

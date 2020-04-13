@@ -10,6 +10,6 @@ docker run --rm -it --net=host\
        --env="LIBGL_ALWAYS_SOFTWARE" \
        --env="MESA_GL_VERSION_OVERRIDE" \
        --mount "type=bind,src=${HOME}/.Xauthority,dst=/home/scilab/.Xauthority,readonly" \
-       --mount "type=bind,src=${PROFILEDIR},dst=/home/scilab/.Scilab" \
+       --mount "type=bind,src=${PROFILEDIR},dst=/home/scilab" \
        --entrypoint /bin/bash \
-       andzuc/debian-scilab
+       andzuc/debian-scilab:2020041302
