@@ -9,8 +9,8 @@ RUN apt-get install -y \
 
 ARG SCILAB_VER=6.1.0
 ARG SCILAB_TAR="scilab-${SCILAB_VER}.bin.linux-x86_64.tar.gz"
-ADD "http://www.scilab.org/download/${SCILAB_VER}/${SCILAB_TAR}" /opt/
-RUN ls /opt && tar -C /opt -xvzf "${SCILAB_TAR}"
+ADD "http://www.scilab.org/download/${SCILAB_VER}/${SCILAB_TAR}" /tmp/
+RUN tar -C /opt -xvzf "/tmp/${SCILAB_TAR}"
 
 RUN useradd -m scilab
 USER scilab
