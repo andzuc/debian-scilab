@@ -5,6 +5,7 @@ LABEL maintainer "Andrea Zuccherelli <andrea@zuccherelli.net>"
 RUN apt-get install -y --no-install-recommends \
     libxft2 \
     libtinfo5 \
+    libxext6 \
     curl \
     build-essential \
     && apt-get autoremove -y \
