@@ -13,7 +13,7 @@ RUN tar -C /opt -xvzf "/tmp/${SCILAB_TAR}" \
 RUN apt-get install -y --no-install-recommends \
     openjdk-11-jre-headless \
     libxft2 \
-    libtinfo6 \
+    libtinfo5 \
     curl \
     build-essential \
     && apt-get autoremove -y \
