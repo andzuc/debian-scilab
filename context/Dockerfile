@@ -2,11 +2,13 @@ FROM andzuc/debian-base
 LABEL maintainer "Andrea Zuccherelli <andrea@zuccherelli.net>"
 
 # Debian packages: scilab scilab-doc
-RUN apt-get install -y \
+RUN apt-get install -y --no-install-recommends \
     libxft2 \
+    libtinfo5 \
     curl \
     build-essential \
-    --no-install-recommends
+    && apt-get autoremove -y \
+    && apt-get clean -y
 
 ARG SCILAB_VER=6.1.0
 ARG SCILAB_TAR="scilab-${SCILAB_VER}.bin.linux-x86_64.tar.gz"
