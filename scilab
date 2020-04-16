@@ -11,5 +11,5 @@ docker run --name scilab --rm --net=host \
        --env="MESA_GL_VERSION_OVERRIDE" \
        --mount "type=bind,src=${HOME}/.Xauthority,dst=/home/scilab/.Xauthority,readonly" \
        --mount "type=bind,src=${PROFILEDIR},dst=/home/scilab" \
-       andzuc/debian-scilab:2020041602 \
+       andzuc/debian-scilab:2020041603 \
        "$@"
