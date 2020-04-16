@@ -14,6 +14,7 @@ RUN apt-get install -y --no-install-recommends \
     openjdk-11-jre-headless \
     libxft2 \
     libtinfo5 \
+    libjogl2-java \
     curl \
     build-essential \
     && apt-get autoremove -y \
