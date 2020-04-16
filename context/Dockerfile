@@ -3,9 +3,7 @@ LABEL maintainer "Andrea Zuccherelli <andrea@zuccherelli.net>"
 
 # Debian packages: scilab scilab-doc
 RUN apt-get install -y --no-install-recommends \
-    libxft2 \
-    libtinfo5 \
-    libxext6 \
+    openjdk-11-jre-headless \
     curl \
     build-essential \
     && apt-get autoremove -y \
