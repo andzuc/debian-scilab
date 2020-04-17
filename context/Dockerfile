@@ -10,12 +10,12 @@ RUN tar -C /opt -xvzf "/tmp/${SCILAB_TAR}" \
     && useradd -m scilab
 
 # Debian packages: scilab scilab-doc
+# mesa: libglx-mesa0 mesa-utils
 RUN apt-get install -y --no-install-recommends \
     default-jre \
     libxft2 \
     libtinfo5 \
     libjogl2-java \
-    libglx-mesa0 \
     curl \
     build-essential \
     && apt-get autoremove -y \
