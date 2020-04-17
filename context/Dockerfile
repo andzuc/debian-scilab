@@ -4,7 +4,7 @@ LABEL maintainer "Andrea Zuccherelli <andrea@zuccherelli.net>"
 ARG SCILAB_VER=6.1.0
 ARG SCILAB_TAR="scilab-${SCILAB_VER}.bin.linux-x86_64.tar.gz"
 ADD "http://www.scilab.org/download/${SCILAB_VER}/${SCILAB_TAR}" /tmp/
-RUN tar -C /opt -xvzf "/tmp/${SCILAB_TAR}" \
+RUN ls -l /tmp && tar -C /opt -xvzf "/tmp/${SCILAB_TAR}" \
     && rm "/tmp/${SCILAB_TAR}" \
     && ln -s "scilab-${SCILAB_VER}" /opt/scilab \
     && useradd -m scilab
