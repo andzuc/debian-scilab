@@ -15,6 +15,7 @@ RUN apt-get install -y --no-install-recommends \
     libxft2 \
     libtinfo5 \
     libjogl2-java \
+    libglx-mesa0 \
     curl \
     build-essential \
     && apt-get autoremove -y \
