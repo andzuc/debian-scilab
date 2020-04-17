@@ -11,7 +11,7 @@ RUN tar -C /opt -xvzf "/tmp/${SCILAB_TAR}" \
 
 # Debian packages: scilab scilab-doc
 RUN apt-get install -y --no-install-recommends \
-    openjdk-11-jre-headless \
+    default-jre \
     libxft2 \
     libtinfo5 \
     libjogl2-java \
