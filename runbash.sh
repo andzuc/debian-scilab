@@ -12,4 +12,4 @@ docker run --rm -it --net=host\
        --mount "type=bind,src=${HOME}/.Xauthority,dst=/home/scilab/.Xauthority,readonly" \
        --mount "type=bind,src=${PROFILEDIR},dst=/home/scilab" \
        --entrypoint /bin/bash \
-       andzuc/debian-scilab:2020041704
+       andzuc/debian-scilab:2020041800

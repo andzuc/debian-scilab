@@ -6,6 +6,7 @@ RUN apt-get install -y --no-install-recommends \
     libxft2 \
     libtinfo5 \
     libjogl2-java \
+    tk \
     curl \
     build-essential \
     && apt-get autoremove -y \
