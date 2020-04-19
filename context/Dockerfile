@@ -14,4 +14,4 @@ USER scilab
 ENV HOME /home/scilab
 WORKDIR /home/scilab
 VOLUME /home/scilab
-ENTRYPOINT ["/opt/scilab/bin/scilab"]
+ENTRYPOINT ["/usr/bin/scilab"]
