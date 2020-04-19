@@ -2,6 +2,7 @@ FROM andzuc/debian-base
 LABEL maintainer "Andrea Zuccherelli <andrea@zuccherelli.net>"
 
 RUN apt-get install -y --no-install-recommends \
+    strace \
     default-jre \
     libxft2 \
     libtinfo5 \
