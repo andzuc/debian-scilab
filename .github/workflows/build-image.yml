@@ -46,5 +46,3 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository }}:${{ env.VERSION }}
             ghcr.io/${{ github.repository }}:latest
-            # ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGENAME }}:${{ env.VERSION }}
-            # ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGENAME }}:latest
