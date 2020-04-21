@@ -12,7 +12,7 @@ RUN apt-get install -y --no-install-recommends \
     && apt-get autoremove -y \
     && apt-get clean -y
 
-ARG SCILAB_VER=6.1.0
+ARG SCILAB_VER=6.0.2
 ARG SCILAB_TAR="scilab-${SCILAB_VER}.bin.linux-x86_64.tar.gz"
 RUN curl -s -L -o "/tmp/${SCILAB_TAR}" "http://www.scilab.org/download/${SCILAB_VER}/${SCILAB_TAR}" \
     && tar -C /opt -xvzf "/tmp/${SCILAB_TAR}" \
