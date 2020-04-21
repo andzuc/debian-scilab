@@ -1,4 +1,4 @@
-FROM andzuc/debian-base
+FROM ghcr.io/andzuc/debian-base
 LABEL maintainer "Andrea Zuccherelli <andrea@zuccherelli.net>"
 
 RUN apt-get install -y --no-install-recommends \
